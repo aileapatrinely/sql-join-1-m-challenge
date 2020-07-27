@@ -3,16 +3,20 @@
 -- Each query should have 10 or less rows as a result.
 
 -- 1. Display the total number of countries in the country table.
-217
-
+SELECT count(*) FROM "country";
 -- 2. Display the entire world population (research SUM). 
-7506964924
-
+SELECT SUM("population")
+FROM "country";
 -- 3. Displays the name and population for the 10 countries with the highest population.
-
+SELECT "name"
+FROM "country"
+ORDER BY "population" DESC
+LIMIT 10;
 
 -- 4. Displays the number of countries in each region.
-
+SELECT "region".name, count(*) FROM "region"
+JOIN "country" ON "country".region_id = "region".id
+GROUP BY "region".name;
 
 -- 5. Displays the total population for each region.
 
