@@ -3,10 +3,10 @@
 -- Each query should have 10 or less rows as a result.
 
 -- 1. Display the total number of countries in the country table.
-
+217
 
 -- 2. Display the entire world population (research SUM). 
-
+7506964924
 
 -- 3. Displays the name and population for the 10 countries with the highest population.
 
